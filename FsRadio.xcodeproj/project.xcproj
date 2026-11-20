@@ -11,8 +11,21 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "FsRadio", "target-membership": [ "FsRadio" ] },
     {
+      "kind": "folder",
+      "path": "FsRadio",
+      "target-membership": [
+        "FsRadio",
+      ],
+      "membership-exceptions": [
+        {
+          "target": "FsRadio",
+          "exclusions": [
+            "Info.plist",
+          ],
+        },
+      ],
+    }, {
       "kind": "group",
       "name": "Products",
       "children": [
@@ -35,15 +48,21 @@
         "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
         "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
         "CODE_SIGN_STYLE": "Automatic",
-        "CURRENT_PROJECT_VERSION": "1",
+        "CURRENT_PROJECT_VERSION": "3",
         "DEVELOPMENT_TEAM": "DD2AUQ9GZF",
         "ENABLE_PREVIEWS": "YES",
         "GENERATE_INFOPLIST_FILE": "YES",
+        "INFOPLIST_FILE": "FsRadio/Info.plist",
+        "INFOPLIST_KEY_CFBundleDisplayName[sdk=*]": "RRadio",
+        "INFOPLIST_KEY_ITSAppUsesNonExemptEncryption": "NO",
+        "INFOPLIST_KEY_LSApplicationCategoryType": "public.app-category.utilities",
+        "INFOPLIST_KEY_NSLocalNetworkUsageDescription": "Scans your local Wi-Fi network to find Internet radio devices",
         "INFOPLIST_KEY_UIApplicationSceneManifest_Generation": "YES",
         "INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents": "YES",
         "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
-        "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad": "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
-        "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone": "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
+        "INFOPLIST_KEY_UIStatusBarStyle": "",
+        "INFOPLIST_KEY_UISupportedInterfaceOrientations": "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown",
+        "IPHONEOS_DEPLOYMENT_TARGET": "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)",
         "LD_RUNPATH_SEARCH_PATHS": [
           "$(inherited)",
           "@executable_path/Frameworks",
